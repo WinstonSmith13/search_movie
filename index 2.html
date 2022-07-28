@@ -1,0 +1,49 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Api Omdb</title>
+		<link rel="stylesheet" href="style_api.css" />
+		<script src="main_api.js" defer></script>
+	</head>
+	<body>
+		<!-- Titre du site -->
+		<div class="titre">
+			<p>RETROUVE TON MOVIE</p>
+		</div>
+		<!-- Barre de recherche-->
+		<div class="rechercheContent">
+			<div class="rechercheInput">
+				<h3></h3>
+				<input
+					type="text"
+					class="barreRecherche"
+					placeholder="Vasy cherche ton film..."
+					id="boiteRecherche"
+                    onchange="loadMovies()"
+                
+				/>
+			</div>
+		</div>
+		<!-- Présentation des films -->
+		<div class="resultatContent">
+			<div class="resultatRecherche" >
+				<div class="elementRecherche">
+					<div class="posterFilm" >
+						<img id="resultatRecherchePoster"
+                        src = "image/e78a747e-1158-4730-b651-91cf130bcefb-the-batman-post-credits-scene.jpeg"/>
+					</div>
+					<div class="infoFilm">
+						<h3 class="titreFilm" id="resultatRechercheTitre"></h3>
+                        <ul class="infos">
+                            <li class="annee" id="resultatRechercheAnnee"></li>
+                            <li  id="resultatRechercheNotes"></li>
+                        </ul>
+                    
+                    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
